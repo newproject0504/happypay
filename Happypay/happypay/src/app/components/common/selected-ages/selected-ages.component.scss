@@ -1,0 +1,127 @@
+.selected-ages-area {
+    position: relative;
+    z-index: 1;
+
+    .section-title {
+        max-width: 500px;
+    }
+}
+.single-selected-ages-box {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .image {
+        margin-bottom: 30px;
+    }
+    h3 {
+        clip-path: polygon(0 0, 100% 0, 99% 100%, 3% 100%);
+        background-color: #cce7e8;
+        color: #5caaac;
+        padding: {
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 6px;
+        };
+        font: {
+            size: 28px;
+            weight: 900;
+        };
+        margin: {
+            left: 15px;
+            right: 15px;
+            bottom: 20px;
+        };
+    }
+    .ages-number {
+        display: block;
+        color: #5caaac;
+        margin-top: 5px;
+        font: {
+            size: 16px;
+            weight: 700;
+        };
+    }
+}
+.col-lg-3 {
+    &:nth-child(2) {
+        .single-selected-ages-box {
+            h3 {
+                background-color: #ffb0b4;
+                color: #fe4a55;
+            }
+            .ages-number {
+                color: #fe4a55;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .single-selected-ages-box {
+            h3 {
+                background-color: #ffeac4;
+                color: #ffa70a;
+            }
+            .ages-number {
+                color: #ffa70a;
+            }
+        }
+    }
+    &:nth-child(4) {
+        .single-selected-ages-box {
+            h3 {
+                background-color: #ebbcff;
+                color: #be22ff;
+            }
+            .ages-number {
+                color: #be22ff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-selected-ages-box {
+        h3 {
+            padding-top: 9px;
+            font-size: 20px;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-selected-ages-box {
+        h3 {
+            font-size: 22px;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-selected-ages-box {
+        h3 {
+            font-size: 21px;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

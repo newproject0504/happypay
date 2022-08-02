@@ -1,0 +1,60 @@
+.section-title .title {
+    letter-spacing: 0.5px;
+    font-size: 30px !important;
+  }
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+  .para-desc {
+    max-width: 600px;
+  }
+  .text-muted {
+    color: #8492a6 !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .py-2 {
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+  }
+  .nav-link {
+    width: 100%;
+  }
+  .nav-pills .nav-link {
+    color: #495057 !important;
+    padding: 5px;
+    transition: all 0.5s ease;
+  }
+  .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+  }
+  .rounded {
+    border-radius: 6px !important;
+  }
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  h6, .h6 {
+    font-size: 16px !important;
+  
+
+}
+
+.nddd:hover
+{
+
+color:#fff!important;
+background-color: #2f55d4 !important;
+}
+
+.bg-primary, .btn-primary, .btn-soft-primary:hover, .btn-soft-primary:focus, .btn-soft-primary:active, .btn-soft-primary.active, .btn-soft-primary.focus, .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.focus, .btn-outline-primary:not(:disabled):not(.disabled):active, .pagination .page-item.active .page-link, .nav-pills .nav-link.active, #preloader #status .spinner .double-bounce1, #preloader #status .spinner .double-bounce2, .social-icon li a:hover, #topnav .navbar-toggle.open span:hover, .bg-animation-left.crypto-home::after, .bg-animation-left.task-management-home::after, .classic-app-image .bg-app-shape::after, .classic-saas-image .bg-saas-shape::after, .swiper-slider-hero .swiper-container .swiper-button-prev:hover, .features.fea-primary:hover, .tns-nav button.tns-nav-active, .ribbon.ribbon-primary span, .sidebar .widget .tagcloud > a:hover, .work-container.work-modern .icons .work-icon:hover, .timeline-page .timeline-item .date-label-left::after, .timeline-page .timeline-item .duration-right::after, #navmenu-nav li.account-menu.active .navbar-link, #navmenu-nav li.account-menu:hover .navbar-link, .form-check-input.form-check-input:checked, .qs-datepicker-container .qs-squares .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover, .qs-datepicker-container .qs-squares .qs-square.qs-current {
+    background-color: #2f55d4 !important;
+  }
+  .nav-pills .nav-link.active {
+    color: #ffffff !important;
+  }

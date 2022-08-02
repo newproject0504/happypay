@@ -1,0 +1,44 @@
+<div class="feedback-with-bg-image ptb-100" *ngFor="let Image of bgImage;" style="background-image: url({{Image.img}});">
+    <div class="container">
+        <div class="feedback-slides feedback-slides-style-two">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="assets/img/user1.jpg" alt="image">
+                            <div class="title">
+                                <h3>John Smith</h3>
+                                <span>Python Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="assets/img/user2.jpg" alt="image">
+                            <div class="title">
+                                <h3>David Warner</h3>
+                                <span>Java Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback-item-box">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <div class="client-info d-flex align-items-center">
+                            <img src="assets/img/user3.jpg" alt="image">
+                            <div class="title">
+                                <h3>Sarah Taylor</h3>
+                                <span>PHP Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

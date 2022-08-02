@@ -1,0 +1,162 @@
+.slogan-area {
+    position: relative;
+    z-index: 1;
+
+    .shape2 {
+        left: 9%;
+        bottom: -20%;
+    }
+    .shape9 {
+        left: 8%;
+        bottom: auto;
+        top: 20%;
+    }
+}
+.slogan-image {
+    padding-right: 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: {
+        top: -200px;
+        bottom: -200px;
+    };
+    img {
+        border-radius: 5px;
+        width: 100%;
+    }
+}
+.slogan-content {
+    position: relative;
+    z-index: 1;
+    padding-left: 30px;
+
+    p {
+        margin-bottom: 0;
+        font: {
+            size: 20px;
+            weight: 600;
+        };
+    }
+    h3 {
+        margin: {
+            top: 20px;
+            bottom: 0;
+        };
+        font: {
+            size: 20px;
+            weight: 800;
+        };
+    }
+    span {
+        display: block;
+        color: var(--mainColor);
+        font-size: 15px;
+        margin-top: 7px;
+    }
+    &::before {
+        content: "\f10a";
+        position: absolute;
+        right: 30px;
+        color: #e8e8e8;
+        z-index: -1;
+        top: -50px;
+        line-height: 1;
+        opacity: .5;
+        font: {
+            family: Flaticon;
+            size: 200px;
+        };
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .slogan-image {
+        padding-right: 0;
+        margin: {
+            top: 0;
+            bottom: 30px;
+        };
+    }
+    .slogan-content {
+        padding-left: 0;
+        text-align: center;
+
+        p {
+            font-size: 17px;
+        }
+        h3 {
+            font-size: 18px;
+        }
+        span {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+        &::before {
+            right: 0;
+            left: 0;
+            top: 0;
+            font-size: 160px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .slogan-image {
+        padding-right: 0;
+        margin: {
+            top: 0;
+            bottom: 30px;
+        };
+    }
+    .slogan-content {
+        padding-left: 0;
+        text-align: center;
+
+        p {
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        span {
+            font-size: 14px;
+        }
+        &::before {
+            right: 0;
+            left: 0;
+            top: 0;
+            font-size: 160px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .slogan-area {
+        .divider2, .divider3 {
+            display: none;
+        }
+    }
+    .slogan-image {
+        padding-right: 0;
+        margin: {
+            top: 0;
+            bottom: 0;
+        };
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+    
+    .slogan-area {
+        .shape3 {
+            display: none;
+        }
+    }
+
+}

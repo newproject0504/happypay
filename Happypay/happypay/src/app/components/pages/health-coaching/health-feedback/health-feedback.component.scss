@@ -1,0 +1,184 @@
+.health-coaching-feedback-area {
+    background-color: #f8fafb;
+
+    .container-fluid {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        .row {
+            margin: {
+                left: 0;
+                right: 0;
+            };
+            .col-lg-6 {
+                padding: {
+                    left: 0;
+                    right: 0;
+                };
+            }
+        }
+    }
+}
+.health-coaching-feedback-image {
+    margin-right: -250px;
+}
+.health-coaching-inner {
+    text-align: center;
+    max-width: 615px;
+
+    h2 {
+        margin-bottom: 60px;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+}
+.feedback-quote {
+    box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+    background-color: #f9f9f2;
+    border-radius: 5px;
+    position: relative;
+    padding: 55px 45px;
+    z-index: 1;
+
+    p {
+        font: {
+            size: 19px;
+            weight: 600;
+        };
+    }
+    .client-info {
+        margin-top: 25px;
+        text-align: start;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+        .title {
+            margin-left: 15px;
+            text-align: start;
+
+            h3 {
+                margin-bottom: 0;
+                color: var(--mainColor);
+                font: {
+                    size: 17px;
+                    weight: 700;
+                };
+            }
+            span {
+                display: block;
+                color: var(--optionalColor);
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .health-coaching-feedback-image {
+        margin-right: 0;
+    }
+    .health-coaching-inner {
+        max-width: 100%;
+        margin-top: 35px;
+        padding: {
+            left: 15px;
+            right: 15px;
+            bottom: 60px;
+        };
+        h2 {
+            margin-bottom: 40px;
+            font-size: 25px;
+        }
+    }
+    .feedback-quote {
+        padding: 20px;
+
+        p {
+            font-size: 15px;
+        }
+        .client-info {
+            margin-top: 20px;
+
+            .title {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .health-coaching-inner {
+        max-width: 540px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .health-coaching-feedback-area {
+        padding-bottom: 80px;
+    }
+    .health-coaching-feedback-image {
+        margin-right: 0;
+    }
+    .health-coaching-inner {
+        max-width: 600px;
+        margin: {
+            left: auto;
+            right: auto;
+            top: 35px;
+        };
+        padding: {
+            left: 15px;
+            right: 15px;
+        };
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .feedback-quote {
+        p {
+            font-size: 17px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .health-coaching-feedback-image {
+        margin-right: -230px;
+    }
+    .health-coaching-inner {
+        max-width: 475px;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+    }
+    .feedback-quote {
+        padding: 20px;
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

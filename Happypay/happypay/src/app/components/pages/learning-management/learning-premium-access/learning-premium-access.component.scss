@@ -1,0 +1,124 @@
+.premium-access-area-two {
+    z-index: 1;
+    padding-top: 30px;
+    position: relative;
+
+    &::before {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        z-index: -1;
+        height: 35px;
+        position: absolute;
+        background-color: #100f1f;
+    }
+}
+.premium-access-content-style-two {
+    position: relative;
+    top: -20px;
+
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 8px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin-bottom: 15px;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+.premium-access-image-style-two {
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .premium-access-area-two {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+        &::before {
+            display: none;
+        }
+    }
+    .premium-access-content-style-two {
+        text-align: center;
+        top: 0;
+
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        p {
+            margin-top: 10px;
+        }
+    }
+    .premium-access-image-style-two {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .premium-access-area-two {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+        &::before {
+            display: none;
+        }
+    }
+    .premium-access-content-style-two {
+        top: 0;
+        text-align: center;
+        
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            max-width: 515px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+    }
+    .premium-access-image-style-two {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .premium-access-content-style-two {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

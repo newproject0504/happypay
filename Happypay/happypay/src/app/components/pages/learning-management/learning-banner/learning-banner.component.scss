@@ -1,0 +1,153 @@
+.main-banner-area {
+    z-index: 1;
+    position: relative;
+    padding: {
+        top: 80px;
+        bottom: 100px;
+    };
+    .container-fluid {
+        max-width: 1395px;
+    }
+    .banner-shape1 {
+        left: auto;
+        bottom: 10%;
+        right: 17%;
+        width: 190px;
+    }
+    .banner-shape2 {
+        width: 50px;
+        left: 29%;
+        top: 9%;
+    }
+    .banner-shape3 {
+        right: auto;
+        width: 50px;
+        left: 30%;
+        top: 5%;
+    }
+}
+.main-banner-content-style-two {
+    h1 {
+        margin-bottom: 20px;
+        font: {
+            size: 60px;
+            weight: 800;
+        };
+    }
+    p {
+        max-width: 580px;
+        line-height: 1.8;
+        font: {
+            weight: 600;
+            size: 16px;
+        };
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main-banner-area {
+        border-top: 1px solid #eeeeee;
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+        .container-fluid {
+            max-width: 100%;
+        }
+    }
+    .main-banner-content-style-two {
+        text-align: center;;
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        p {
+            max-width: 100%;
+            font: {
+                weight: 500;
+                size: 15px;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .main-banner-image-style-two {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .main-banner-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .main-banner-area {
+        border-top: 1px solid #eeeeee;
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+        .container-fluid {
+            max-width: 720px;
+        }
+    }
+    .main-banner-content-style-two {
+        text-align: center;
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 37px;
+        }
+        p {
+            margin: 0 auto 10px;
+            max-width: 515px;
+            font-size: 15px;
+        }
+    }
+    .main-banner-image-style-two {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .main-banner-area {
+        .container-fluid {
+            max-width: 960px;
+        }
+    }
+    .main-banner-content-style-two {
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            max-width: 100%;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}
+@media only screen and (min-width: 1550px) {
+
+    .main-banner-area {
+        .container-fluid {
+            max-width: 1480px;
+        }
+    }
+    
+}

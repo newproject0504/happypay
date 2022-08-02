@@ -1,0 +1,228 @@
+.get-instant-courses-inner-area {
+    position: relative;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+
+    .row {
+        margin: {
+            left: 0;
+            right: 0;
+        };
+        .col-lg-8, .col-lg-4 {
+            padding: {
+                left: 0;
+                right: 0;
+            };
+        }
+    }
+}
+.get-instant-courses-content {
+    padding: {
+        left: 70px;
+        right: 70px;
+        top: 70px;
+        bottom: 30px;
+    };
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin: {
+            bottom: 12px;
+        };
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .default-btn {
+        margin-top: 5px;
+    }
+}
+.get-instant-courses-image {
+    position: relative;
+    z-index: 1;
+    border-radius: 0 5px 5px 0;
+
+    img {
+        border-radius: 0 5px 5px 0;
+    }
+}
+.get-instant-courses-area-two {
+    position: relative;
+    z-index: 1;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 25px;
+        z-index: -1;
+        background-color: var(--whiteColor);
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 21px;
+        z-index: -1;
+        background-color: var(--whiteColor);
+    }
+    .bulb {
+        left: 20px;
+        width: 180px;
+        bottom: 21px;
+    }
+}
+.get-instant-courses-content-style-two {
+    .sub-title {
+        display: block;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin-bottom: 15px;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    p {
+        max-width: 620px;
+        line-height: 1.8;
+    }
+    .default-btn {
+        margin-top: 5px;
+    }
+}
+.get-instant-courses-image-style-two {
+    text-align: end;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .get-instant-courses-content {
+        padding: {
+            left: 20px;
+            right: 20px;
+            top: 30px;
+            bottom: 30px;
+        };
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .get-instant-courses-area-two {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+        &::before, &::after {
+            display: none;
+        }
+    }
+    .get-instant-courses-content-style-two {
+        text-align: center;
+        
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .get-instant-courses-image-style-two {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .get-instant-courses-content {
+        text-align: center;
+        padding: 40px;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .get-instant-courses-area-two {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+        &::before, &::after {
+            display: none;
+        }
+    }
+    .get-instant-courses-content-style-two {
+        text-align: center;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .get-instant-courses-image-style-two {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .get-instant-courses-content {
+        padding: 30px;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .get-instant-courses-content-style-two {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}
+@media only screen and (min-width: 1550px) {
+
+    .get-instant-courses-area-two {
+        .bulb {
+            width: auto;
+        }
+    }
+    
+}

@@ -1,0 +1,40 @@
+.avatar.avatar-small {
+    height: 65px;
+    width: 65px;
+  }
+  img, svg {
+    vertical-align: middle;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .mt-4 {
+    margin-top: 1.5rem !important;
+  }
+    @media (min-width: 768px)
+    {
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
+  }
+  .text-muted {
+    color: #8492a6 !important;
+  }
+   .h6 {
+    font-family: "Nunito", sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  h6, .h6 {
+    font-size: 16px !important;
+  }

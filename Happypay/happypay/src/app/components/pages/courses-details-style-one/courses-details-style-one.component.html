@@ -1,0 +1,296 @@
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>{{course?.name}}</h2>
+            <div class="rating">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <div class="rating-count">
+                    <span>4.0 (1000 rating)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape9"><img src="assets/img/shape8.svg" alt="image"></div>
+</div>
+
+<div class="courses-details-area">
+    <div class="courses-details-image">
+        <img style="height: 500px; object-fit: cover; width: 100vw;" [src]="course?.poster" alt="image">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="courses-details-desc">
+                    <ngx-tabset>
+                        <ngx-tab tabTitle="Overview">
+                            <div class="courses-overview">
+                                <div class="courses-details-desc-style-two">
+                                    <h3>Description</h3>
+                                    <p>{{course?.description}}</p>
+                                    <h3>This course includes</h3>
+                                    <div class="why-you-learn">
+                                        <ul>
+                                            <li *ngFor="let item of course?.outcomesObject">
+                                                <span>
+                                                    <i class='flaticon-tick'></i>
+                                                    {{item}}
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3>Requirements</h3>
+                                    <ul class="requirements-list">
+                                        <li *ngFor="let item of course?.requirementsObject">{{item}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ngx-tab>
+                        <ngx-tab tabTitle="Curriculum">
+                            <div class="courses-curriculum">
+                                <div class="card" style="margin: 10px;" *ngFor="let item of course?.QNAObject">
+                                    <div #m (click)="open(q,i,m)" class="collapsible">
+                                        <p>{{item.question}}</p>
+                                        <i #i class='bx bx-chevron-down' style="height: min-content; transition: all .3s ease-in-out;"></i>
+                                    </div>
+                                    <div #q class="content">
+                                    <p *ngFor="let ans of item.answer">{{ans}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </ngx-tab>
+                        <ngx-tab tabTitle="Instructor">
+                            <div class="courses-instructor">
+                                <div class="single-advisor-box">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-4 col-md-4">
+                                            <div class="advisor-image">
+                                                <img [src]="instructor?.imageSrc" alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 col-md-8">
+                                            <div class="advisor-content">
+                                                <h3>{{instructor?.name}}</h3>
+                                                <span class="sub-title">{{instructor?.designation}}</span>
+                                                <p>{{instructor?.description}}</p>
+                                                <ul class="social-link">
+                                                    <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                                    <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                                    <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                                    <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ngx-tab>
+                        <ngx-tab tabTitle="Reviews">
+                            <div class="courses-reviews">
+                                <h3>course? Rating</h3>
+                                <div class="rating">
+                                    <span class="bx bxs-star checked"></span>
+                                    <span class="bx bxs-star checked"></span>
+                                    <span class="bx bxs-star checked"></span>
+                                    <span class="bx bxs-star checked"></span>
+                                    <span class="bx bxs-star"></span>
+                                </div>
+                                <div class="rating-count">
+                                    <span>4.1 average based on 4 reviews.</span>
+                                </div>
+                                <div class="row">
+                                    <div class="side">
+                                        <div>5 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>02</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>4 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>03</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>3 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>04</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>2 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>05</div>
+                                    </div>
+                                    <div class="side">
+                                        <div>1 star</div>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="bar-container">
+                                            <div class="bar-1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="side right">
+                                        <div>00</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses-review-comments">
+                                <h3>3 Reviews</h3>
+                                <div class="user-review">
+                                    <img src="assets/img/user1.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                        </div>
+                                        <span class="d-inline-block">James Anderson</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Excellent</span>
+                                    <p>Very well built theme, couldn't be happier with it. Can't wait for future updates to see what else they add in.</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user2.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <span class="d-inline-block">Sarah Taylor</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Video Quality!</span>
+                                    <p>Was really easy to implement and they quickly answer my additional questions!</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user3.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                        </div>
+                                        <span class="d-inline-block">David Warner</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Perfect Coding!</span>
+                                    <p>Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice support.</p>
+                                </div>
+                                <div class="user-review">
+                                    <img src="assets/img/user4.jpg" alt="image">
+                                    <div class="review-rating">
+                                        <div class="review-stars">
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star checked'></i>
+                                            <i class='bx bxs-star'></i>
+                                        </div>
+                                        <span class="d-inline-block">King Kong</span>
+                                    </div>
+                                    <span class="d-block sub-comment">Perfect Video!</span>
+                                    <p>Stunning design, very dedicated crew who welcome new ideas suggested by customers, nice support.</p>
+                                </div>
+                            </div>
+                        </ngx-tab>
+                    </ngx-tabset>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12" style="position: sticky;">
+                <div class="courses-details-info">
+                    <div class="image">
+                        <img [src]="course?.image" alt="image">
+                        <a [href]="course?.videoLink" class="link-btn popup-youtube"></a>
+                        <div class="content">
+                            <i class="flaticon-play"></i>
+                            <span>course Preview</span>
+                        </div>
+                    </div>
+                    <ul class="info">
+                        <li class="price">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-tag"></i> Price</span>
+                                {{course?.price}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-teacher"></i> Instructor</span>
+                                {{course?.instructor}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-time"></i> Duration</span>
+                                {{course?.duration}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-distance-learning"></i> Lessons</span>
+                                {{course?.lessons}}
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-web"></i> Enrolled</span>
+                                255 students
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span><i class="flaticon-lock"></i> Access</span>
+                                Lifetime
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="btn-box">
+                        <a href="https://rzp.io/l/qwggqdx8Z" target="blank" class="default-btn"><i class="flaticon-tag"></i>Buy Now<span></span></a>
+                    </div>
+                    <div class="courses-share">
+                        <div class="share-info">
+                            <span>Share This course? <i class="flaticon-share"></i></span>
+                            <ul class="social-link">
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href="#" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,108 @@
+.view-all-courses-area-three {
+    padding-top: 20px;
+    position: relative;
+    z-index: 1;
+
+    .bulb {
+        left: auto;
+        right: 50px;
+    }
+}
+.view-all-courses-content-style-two {
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 8px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin-bottom: 0;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    p {
+        margin-top: 15px;
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+.view-all-courses-image-style-two {
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .view-all-courses-area-three {
+        padding: {
+            top: 60px;
+            bottom: 60px;
+        };
+    }
+    .view-all-courses-image-style-two {
+        text-align: center;
+        margin: {
+            left: 0;
+            bottom: 30px;
+        };
+    }
+    .view-all-courses-content-style-two {
+        text-align: center;
+        
+        .sub-title {
+            font-size: 13px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .view-all-courses-area-three {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+        };
+    }
+    .view-all-courses-image-style-two {
+        text-align: center;
+        margin: {
+            left: 0;
+            bottom: 30px;
+        };
+    }
+    .view-all-courses-content-style-two {
+        text-align: center;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .view-all-courses-content-style-two {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

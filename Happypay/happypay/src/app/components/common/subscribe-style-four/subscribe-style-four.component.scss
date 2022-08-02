@@ -1,0 +1,12 @@
+@import "../subscribe/subscribe.component.scss";
+.subscribe-area {
+    &.bg-eee8df {
+        .subscribe-content {
+            .newsletter-form {
+                .input-newsletter {
+                    background-color: var(--whiteColor);
+                }
+            }
+        }
+    }
+}

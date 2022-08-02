@@ -1,0 +1,22 @@
+@import "../feedback/feedback.component.scss";
+
+.feedback-with-bg-image {
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: #000000;
+        opacity: .50;
+        z-index: -1;
+    }
+}

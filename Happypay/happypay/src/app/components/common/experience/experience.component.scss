@@ -1,0 +1,372 @@
+.experience-area {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    &.extra-padding {
+        padding-top: 150px;
+    }
+}
+.experience-content {
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin-bottom: 15px;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .features-list {
+        padding-left: 0;
+        list-style-type: none;
+        margin: {
+            bottom: 0;
+            top: 25px;
+        };
+        li {
+            color: var(--blackColor);
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            padding: {
+                left: 40px;
+                top: 5px;
+            };
+            i {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+                color: var(--whiteColor);
+                background-color: #a3c5bb;
+                z-index: 1;
+                border-radius: 50%;
+                font-size: 20px;
+                transition: var(--transition);
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    background-color: var(--secondaryColor);
+                    border-radius: 50%;
+                    z-index: -1;
+                    margin: 2px 1px 1px 2px;
+                    transition: var(--transition);
+                }
+            }
+            &:hover {
+                i {
+                    background-color: var(--mainColor);
+                    color: var(--mainColor);
+
+                    &::after {
+                        background-color: var(--whiteColor);
+                    }
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .default-btn {
+        margin-top: 35px;
+    }
+}
+.experience-image {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: {
+        top: 35px;
+        left: 35px;
+    };
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1; 
+        right: 0;
+        top: 0;
+        background-color: var(--mainColor);
+        margin-right: 35px;
+    }
+    &::after {
+        background-color: #000000;
+        opacity: 0.1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        content: '';
+        margin: {
+            left: 35px;
+            top: 35px;
+        };
+    }
+    .video-btn {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+        z-index: 3;
+        text-align: center;
+        line-height: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: var(--secondaryColor);
+        border-radius: 7px;
+        color: var(--whiteColor);
+    
+        &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            border-radius: 7px;
+            border: 1px solid var(--whiteColor);
+        }
+        &::before {
+            animation: ripple 2s linear infinite;
+        }
+        &::after {
+            animation: ripple 2s linear 1s infinite;
+        }
+        &:hover {
+            background-color: var(--mainColor);
+        }
+    }
+    .title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        background-color: var(--mainColor);
+        color: var(--whiteColor);
+        border-radius: 0 30px 0 0;
+        padding: {
+            top: 15px;
+            bottom: 13px;
+            left: 55px;
+            right: 30px;
+        };
+        font: {
+            size: 35px;
+            weight: 700;
+        };
+        span {
+            font-weight: 800;
+        }
+    }
+}
+.experience-content {
+    position: relative;
+    z-index: 1;
+
+    .shape {
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        top: 65%;
+        transform: translateY(-65%);
+
+        img {
+            animation: movebounce 5s linear infinite;
+        }
+    }
+}
+.experience-img {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-left: 30px;
+    padding: {
+        left: 15px;
+        right: 15px;
+        bottom: 30px;
+    };
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background-color: var(--mainColor);
+        z-index: -1;
+    }
+    .title {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        display: block;
+        background-color: var(--secondaryColor);
+        color: var(--whiteColor);
+        width: 100%;
+        padding: {
+            top: 15px;
+            bottom: 12px;
+            left: 30px;
+            right: 30px;
+        };
+        font: {
+            size: 35px;
+            weight: 700;
+        };
+        span {
+            font-weight: 800;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .experience-area {
+        &.extra-padding {
+            padding-top: 60px;
+        }
+    }
+    .experience-content {
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .shape {
+            display: none;
+        }
+    }
+    .experience-image {
+        margin: {
+            top: 35px;
+        };
+        padding: {
+            left: 10px;
+            top: 10px;
+        };
+        &::before {
+            margin-right: 10px;
+        }
+        &::after {
+            margin: {
+                left: 10px;
+                top: 10px;
+            };
+        }
+        .video-btn {
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            line-height: 60px;
+        }
+        .title {
+            font-size: 20px;
+            padding: {
+                top: 12px;
+                bottom: 10px;
+                left: 25px;
+                right: 30px;
+            };
+        }
+    }
+    .experience-img {
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+        .title {
+            font-size: 22px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .experience-area {
+        &.extra-padding {
+            padding-top: 80px;
+        }
+    }
+    .experience-content {
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .experience-image {
+        margin-top: 30px;
+
+        .title {
+            font-size: 30px;
+        }
+    }
+    .experience-img {
+        margin: {
+            top: 30px;
+            left: 0;
+        };
+        .title {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .experience-content {
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .experience-image {
+        .title {
+            font-size: 25px;
+        }
+    }
+    .experience-content {
+        .shape {
+            display: none;
+        }
+    }
+    .experience-img {
+        .title {
+            font-size: 25px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

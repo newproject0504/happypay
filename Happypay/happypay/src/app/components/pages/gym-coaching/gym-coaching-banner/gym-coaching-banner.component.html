@@ -1,0 +1,66 @@
+<div class="gym-home-area" *ngFor="let Image of bgImage;" style="background-image: url({{Image.img}});">
+    <div class="gym-banner-slides">
+        <owl-carousel-o [options]="gymBannerSlides">
+            <ng-template carouselSlide>
+                <div class="gym-banner-item">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-content">
+                                    <h1>START YOUR FITNESS JOURNEY WITH EXPERT</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>Join For Free<span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-image">
+                                    <img src="assets/img/gym-banner1.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="gym-banner-item">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-content">
+                                    <h1>ODEMY IS MORE THAN A PLACE</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>Join For Free<span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-image">
+                                    <img src="assets/img/gym-banner2.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="gym-banner-item">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-content">
+                                    <h1>WE STANDARD FOR HEALTH & SAFETY</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.</p>
+                                    <a routerLink="/courses-1" class="default-btn"><i class="flaticon-user"></i>Join For Free<span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="gym-banner-image">
+                                    <img src="assets/img/gym-banner3.png" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>

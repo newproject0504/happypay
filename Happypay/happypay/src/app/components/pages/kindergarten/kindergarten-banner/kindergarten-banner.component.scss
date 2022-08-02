@@ -1,0 +1,314 @@
+.kindergarten-main-banner {
+    background-color: #f8e8e9;
+    position: relative;
+    z-index: 1;
+    padding: {
+        top: 180px;
+    };
+    .container-fluid {
+        padding: {
+            left: 40px;
+            right: 40px;
+        };
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: {
+            image: url(../../../../../assets/img/events-rectangle1.png);
+            position: top;
+            repeat: no-repeat;
+        };
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: {
+            image: url(../../../../../assets/img/events-rectangle2.png);
+            position: bottom;
+            repeat: no-repeat;
+        };
+    }
+}
+.kindergarten-banner-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    .image {
+        margin-bottom: 15px;
+
+        img {
+            max-width: 115px;
+        }
+    }
+    .circle-shape {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 15px;
+        z-index: -1;
+    }
+    h1 {
+        margin-bottom: 18px;
+        line-height: 1.04;
+        font: {
+            size: 55px;
+            weight: 900;
+        };
+        span {
+            display: block;
+            font-size: 70px;
+        }
+    }
+    p {
+        max-width: 525px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .default-btn-style-two {
+        margin-top: 10px;
+    }
+}
+.kindergarten-banner-image {
+    margin-top: -70px;
+    position: relative;
+    z-index: 2;
+
+    .row {
+        margin: {
+            left: -10px;
+            right: -10px;
+        };
+        .col-lg-6 {
+            padding: {
+                left: 10px;
+                right: 10px;
+            };
+        }
+    }
+    .image {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .kindergarten-main-banner {
+        padding-top: 100px;
+
+        .container-fluid {
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .kindergarten-banner-content {
+        h1 {
+            margin-bottom: 15px;
+            line-height: 1.2;
+            font-size: 30px;
+
+            span {
+                display: inline;
+                font-size: 30px;
+            }
+        }
+        .image {
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 100%;
+            margin: {
+                left: 0;
+                right: 0;
+            };
+        }
+        .circle-shape {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 15px;
+            display: none;
+            z-index: -1;
+        }
+        .default-btn-style-two {
+            margin-top: 5px;
+        }
+    }
+    .kindergarten-banner-image {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .kindergarten-main-banner {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .kindergarten-main-banner {
+        padding-top: 130px;
+
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .kindergarten-banner-content {
+        max-width: 525px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+        h1 {
+            margin-bottom: 15px;
+            line-height: 1.2;
+            font-size: 45px;
+
+            span {
+                display: inline;
+                font-size: 45px;
+            }
+        }
+        .circle-shape {
+            display: none;
+        }
+    }
+    .kindergarten-banner-image {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .kindergarten-main-banner {
+        padding-top: 150px;
+
+        .container-fluid {
+            max-width: 960px;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+        &::after {
+            bottom: -1px;
+        }
+    }
+    .kindergarten-banner-content {
+        .image {
+            img {
+                max-width: 60px;
+            }
+        }
+        .circle-shape {
+            display: none;
+        }
+        h1 {
+            line-height: 1.1;
+            font-size: 45px;
+
+            span {
+                display: inline;
+                font-size: 50px;
+            }
+        }
+    }
+    .kindergarten-banner-image {
+        margin-top: -15px;
+
+        .mt-4, .my-4 {
+            margin-top: 0 !important;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+    .kindergarten-main-banner {
+        padding-top: 150px;
+
+        .container-fluid {
+            max-width: 1200px;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .kindergarten-banner-content {
+        .image {
+            img {
+                max-width: 100px;
+            }
+        }
+        h1 {
+            font-size: 50px;
+
+            span {
+                font-size: 70px;
+                display: inline;
+            }
+        }
+        .circle-shape {
+            display: none;
+        }
+    }
+    .kindergarten-banner-image {
+        margin-top: -50px;
+
+        .mt-4, .my-4 {
+            margin-top: 0 !important;
+        }
+    }
+
+}
+@media only screen and (min-width: 1550px) {
+
+    .kindergarten-main-banner {
+        .container-fluid {
+            padding: {
+                left: 120px;
+                right: 120px;
+            };
+        }
+    }
+    .kindergarten-banner-content {
+        .image {
+            img {
+                max-width: 100%;
+            }
+        }
+        h1 {
+            font: {
+                size: 60px;
+            };
+            span {
+                font-size: 80px;
+            }
+        }
+    }
+    
+}

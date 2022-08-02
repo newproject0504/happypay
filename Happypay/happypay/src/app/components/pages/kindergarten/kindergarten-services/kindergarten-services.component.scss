@@ -1,0 +1,155 @@
+.kindergarten-services-area {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 200px;
+        z-index: -1;
+        background-color: var(--whiteColor);
+        width: 100%;
+    }
+}
+.single-kindergarten-services-box {
+    text-align: center;
+    position: relative;
+
+    .content {
+        left: 0;
+        right: 0;
+        top: 85px;
+        z-index: 1;
+        position: absolute;
+        padding: {
+            left: 70px;
+            right: 50px;
+        };
+        .icon {
+            color: var(--mainColor);
+            margin-bottom: 25px;
+            font-size: 55px;
+            line-height: 1;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font: {
+                size: 24px;
+                weight: 800;
+            };
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .kindergarten-services-area {
+        padding-bottom: 60px;
+
+        &::before {
+            display: none;
+        }
+    }
+    .single-kindergarten-services-box {
+        background-color: #ffffff;
+        padding: {
+            left: 15px;
+            right: 15px;
+            top: 25px;
+            bottom: 25px;
+        };
+        img {
+            display: none !important;
+        }
+        .content {
+            position: relative;
+            top: 0;
+            padding: {
+                left: 0;
+                right: 0;
+            };
+            h3 {
+                font-size: 19px;
+            }
+            .icon {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .kindergarten-services-area {
+        &::before {
+            height: 160px;
+        }
+    }
+    .single-kindergarten-services-box {
+        background-color: #ffffff;
+        padding: {
+            left: 20px;
+            right: 20px;
+            top: 35px;
+            bottom: 35px;
+        };
+        img {
+            display: none !important;
+        }
+        .content {
+            position: relative;
+            top: 0;
+            padding: {
+                left: 0;
+                right: 0;
+            };
+            .icon {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .single-kindergarten-services-box {
+        background-color: #ffffff;
+        padding: {
+            left: 20px;
+            right: 20px;
+            top: 35px;
+            bottom: 35px;
+        };
+        img {
+            display: none !important;
+        }
+        .content {
+            position: relative;
+            top: 0;
+            padding: {
+                left: 0;
+                right: 0;
+            };
+            .icon {
+                font-size: 45px;
+            }
+            h3 {
+                font-size: 21px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

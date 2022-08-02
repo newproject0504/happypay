@@ -1,0 +1,216 @@
+.about-area-two {
+    position: relative;
+    z-index: 1;
+
+    .shape3 {
+        right: 12%;
+        bottom: auto;
+        top: 25%;
+    }
+    .shape4 {
+        right: 8%;
+        bottom: auto;
+        top: 7%;
+    }
+    .shape2 {
+        left: auto;
+        bottom: 5%;
+        right: 15%;
+    }
+}
+.about-content-box {
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin: {
+            bottom: 16px;
+        };
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .link-btn {
+        display: inline-block;
+        color: var(--mainColor);
+        position: relative;
+        border-bottom: 1px solid transparent;
+        font: {
+            weight: 700;
+        };
+        &:hover {
+            color: var(--blackColor);
+            border-color: var(--blackColor);
+        }
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+.about-video-box {
+    margin-left: 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    
+    .image {
+        overflow: hidden;
+        border-radius: 5px;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border-radius: 5px;
+            background-color: var(--blackColor);
+            opacity: .3;
+            z-index: 1;
+        }
+        img {
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+    }
+    .video-btn {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+        text-align: center;
+        line-height: 80px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%) translateX(-50%);
+        background-color: var(--mainColor);
+        border-radius: 50%;
+        color: var(--whiteColor);
+    
+        &::after, &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+            bottom: 0;
+            left: 0;
+            transition: var(--transition);
+            border-radius: 50%;
+            border: 1px solid var(--mainColor);
+        }
+        &::before {
+            animation: ripple 2s linear infinite;
+        }
+        &::after {
+            animation: ripple 2s linear 1s infinite;
+        }
+        &:hover {
+            color: var(--whiteColor);
+            background-color: var(--blackColor);
+    
+            &::before, &::after {
+                border-color: var(--blackColor);
+            }
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale3d(1.1,1.1,1.1);
+            }
+        }
+    }
+    .shape10 {
+        left: -6.5%;
+        bottom: -13.5%;
+        opacity: .50;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .about-area-two {
+        &.pt-70 {
+            padding-top: 60px;
+        }
+    }
+    .about-content-box {
+        padding-left: 0;
+        text-align: center;
+
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .about-video-box {
+        margin: {
+            top: 30px;
+            left: 0;
+        };
+        .video-btn {
+            width: 65px;
+            height: 65px;
+            font-size: 30px;
+            line-height: 65px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .about-area-two {
+        &.pt-70 {
+            padding-top: 80px;
+        }
+    }
+    .about-content-box {
+        text-align: center;
+        
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .about-video-box {
+        margin: {
+            left: 0;
+            top: 30px;
+        };
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .about-content-box {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

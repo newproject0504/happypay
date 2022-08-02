@@ -1,0 +1,157 @@
+.banner-section {
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    };
+    .container-fluid {
+        max-width: 1395px;
+    }
+}
+.banner-content {
+    h1 {
+        color: var(--whiteColor);
+        margin-bottom: 20px;
+        font: {
+            size: 48px;
+            weight: 800;
+        };
+    }
+    p {
+        max-width: 450px;
+        color: #d2d2d2;
+        font: {
+            weight: 600;
+            size: 17px;
+        };
+    }
+    .default-btn {
+        margin-top: 15px;
+
+        span {
+            background-color: var(--whiteColor);
+        }
+        &:hover {
+            color: var(--blackColor);
+        }
+    }
+}
+.banner-image {
+    position: relative;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .banner-section {
+        padding: {
+            top: 100px;
+            bottom: 80px;
+        };
+        .container-fluid {
+            max-width: 100%;
+        }
+    }
+    .banner-content {
+        text-align: center;
+
+        p {
+            max-width: 100%;
+            font: {
+                weight: 500;
+                size: 15px;
+            };
+        }
+        h1 {
+            margin-bottom: 12px;
+            font-size: 28px;
+            line-height: 1.4;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .banner-image {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .banner-section {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .banner-section {
+        padding: {
+            top: 110px;
+            bottom: 100px;
+        };
+        .container-fluid {
+            max-width: 720px;
+        }
+    }
+    .banner-content {
+        text-align: center;
+
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 16px;
+            max-width: 535px;
+            margin: {
+                left: auto;
+                right: auto;
+            };
+        }
+    }
+    .banner-image {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .banner-section {
+        padding-top: 150px;
+
+        .container-fluid {
+            max-width: 800px;
+        }
+        .col-lg-5, .col-lg-7 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+    
+    .banner-section {
+        .container-fluid {
+            max-width: 1165px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1550px) {
+
+    .banner-section {
+        .container-fluid {
+            max-width: 1500px;
+        }
+    }
+    
+}

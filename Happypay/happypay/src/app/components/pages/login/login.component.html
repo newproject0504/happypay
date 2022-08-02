@@ -1,0 +1,109 @@
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <ul>
+                <li><a routerLink="/">Home</a></li>
+                <li>Welcome</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="login" class="profile-authentication-area">
+    <div class="container">
+        <div class="row">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" id="loginPhone" class="form-control" placeholder="Phone Number"/>
+                    </div>
+                    <div class="form-group" id="pass">
+                        <label>Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Password"/>
+                    </div>
+                    <div id="forgot" style="display: none;">
+                        <div class="form-group" style="position: relative;">
+                            <label>OTP</label>
+                            <input type="text" id="fotp" class="form-control" placeholder="Enter OTP"/>
+                            <button type="button" (click)="forgototp()" style="position: absolute; right: 5px; top: 11px; width: 100px; height: 40px; padding: 0px; background-color: #3368ff;">GET OTP</button>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="email" id="fpass" class="form-control" placeholder="password"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Re-Enter Password</label>
+                            <input type="password" id="frpass" class="form-control" placeholder="re enter password"/>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6 remember-me-wrap">
+                            <p>
+                                <input type="checkbox" id="test2">
+                                <label for="test2">Remember me</label>
+                            </p>
+                        </div>
+                        <div style="cursor: pointer;" class="col-lg-6 col-md-6 col-sm-6 lost-your-password-wrap">
+                            <a (click)="forgot()" class="lost-your-password">{{isPasswordForgotten?'go to login':'Forgot your password'}}</a>
+                        </div>
+                    </div>
+                    <button (click)="loginButton()">Log In</button>
+                    <div class="text-center m-3" style="cursor: pointer;">
+                        <a (click)="register()" class="lost-your-password">Register Now</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register" style="display: none;" class="profile-authentication-area">
+    <div class="container">
+        <div class="row">
+            <div class="register-form">
+                <h2>Register</h2>
+                <form id="register">
+                    <div class="form-group">
+                        <label>User Name</label>
+                        <input type="text" id="user" class="form-control" placeholder="Username"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number</label>
+                        <input type="number" id="phone" class="form-control" placeholder="phone number"/>
+                    </div>
+                    <div class="form-group" style="position: relative;">
+                        <label>OTP</label>
+                        <input type="text" id="otp" class="form-control" placeholder="Enter OTP"/>
+                        <button type="button" (click)="otp()" style="position: absolute; right: 5px; top: 11px; width: 100px; height: 40px; padding: 0px; background-color: #3368ff;">GET OTP</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="email"/>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="number" id="passw" class="form-control" placeholder="Password"/>
+                    </div>
+                    
+                    <div class="row">
+                        <p>
+                            <input type="checkbox" id="terms">
+                            <label > &nbsp; I accept the terms and conditions</label>
+                        </p>
+                    </div>
+                    <p class="description">The password should be at six digits. </p>
+                    <button type="button" (click)="registerButton()">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="notification" id="notify">
+    <h3>
+        OPT Sent to your mobile number 8078787878
+    </h3>
+    <p>Sarveksha</p>
+</div>

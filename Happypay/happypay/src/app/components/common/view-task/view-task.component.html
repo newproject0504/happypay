@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="head">
+        <p>Task details</p>
+    </div>
+    <div class="body">
+        <div class="task-details">
+            <div class="info">
+                <h2>{{task.title}}</h2>
+                <a class="default-btn" [href]="task.ageGroup" target="blank">Open account</a>
+            </div>
+            <div class="desc">
+                {{task.shortDescription}}
+            </div>
+        </div>
+        <div class="profit-details">
+            <div class="info">
+                <h3>Your profit</h3>
+                <p>{{task.yourProfit}}</p>
+            </div>
+            <div class="info">
+                <h3>Profit Tracking Time</h3>
+                <p>{{task.profitTrackingTime}}</p>
+            </div>
+            <div class="info">
+                <h3>Profit gets Paid</h3>
+                <p>{{task.profitPiadBy}}</p>
+            </div>
+        </div>
+    </div>  
+    <div class="long">
+        <p>{{task.description}}</p>
+    </div>
+    <div class="box">
+        <h3>Specifications</h3>
+        <pre style="font-size: medium; font: 400 14px/20px Roboto, 'Helvetica Neue', sans-serif;">{{task.specifications}}</pre>
+    </div>
+    <div class="box">
+        <h3>Instructions</h3>
+        <pre style="font-size: medium; font: 400 14px/20px Roboto, 'Helvetica Neue', sans-serif;">{{task.instructions}}</pre>
+    </div>
+    <div class="box">
+        <h3>Terms & Conditions</h3>
+        <pre style="font-size: medium; font: 400 14px/20px Roboto, 'Helvetica Neue', sans-serif;">{{task.termsAndConditions}}</pre>
+    </div>
+</div>

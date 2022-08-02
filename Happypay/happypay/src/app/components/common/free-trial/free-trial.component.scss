@@ -1,0 +1,110 @@
+.free-trial-form {
+    background-color: #f3f3f3;
+    padding: 50px 30px;
+
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 8px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin: {
+            bottom: 30px;
+        };
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    form {
+        .form-group {
+            margin-bottom: 22px;
+        }
+        input {
+            background-color: var(--whiteColor) !important;
+        }
+        button {
+            border: none;
+            text-align: center;
+            color: var(--whiteColor);
+            background-color: var(--mainColor);
+            transition: var(--transition);
+            border-radius: 5px;
+            display: block;
+            width: 100%;
+            font: {
+                weight: 700;
+                size: var(--fontSize);
+            };
+            padding: {
+                left: 30px;
+                right: 30px;
+                top: 13px;
+                bottom: 13px;
+            };
+            &:hover {
+                color: var(--whiteColor);
+                background-color: var(--blackColor);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .free-trial-form {
+        margin-top: 30px;
+        text-align: center;
+        padding: 30px 20px;
+
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        form {
+            .form-group {
+                margin-bottom: 15px;
+            }
+            button {
+                font-size: 15px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .free-trial-form {
+        margin-top: 30px;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .free-trial-form {
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

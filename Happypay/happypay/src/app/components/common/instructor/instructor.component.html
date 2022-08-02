@@ -1,0 +1,36 @@
+<div class="advisor-area bg-f9f9f9 pt-100">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Instructor</span>
+            <h2>Course Advisor</h2>
+        </div>
+        <div class="advisor-slides">
+            <owl-carousel-o [options]="advisorSlides">
+                <ng-template carouselSlide *ngFor="let item of instructors">
+                    <div class="single-advisor-box">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-md-12">
+                                <div class="advisor-image">
+                                    <img [src]="item.imageSrc" alt="image">
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <div class="advisor-content">
+                                    <h3><a routerLink="/profile">{{item.name}}</a></h3>
+                                    <span class="sub-title">{{item.designation}}</span>
+                                    <ul class="social-link">
+                                        <li><a [href]="item.linkedin" class="d-block" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                                        <li><a [href]="item.linkedin" class="d-block" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                                        <li><a [href]="item.linkedin" class="d-block" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                                        <li><a [href]="item.linkedin" class="d-block" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+@import "../../../common/courses/courses.component.scss";
+
+.courses-area {
+    &.bg-black {
+        background-color: var(--blackColor);
+
+        .section-title {
+            h2 {
+                color: var(--whiteColor);
+            }
+            p {
+                color: var(--whiteColor);
+                opacity: 0.9;
+            }
+        }
+        .courses-info {
+            p {
+                color: var(--whiteColor);
+                opacity: 0.9;
+
+                a {
+                    color: var(--whiteColor) !important;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}

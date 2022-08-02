@@ -1,0 +1,12 @@
+@import "../../../common/courses/courses.component.scss";
+
+.courses-area {
+    &.bg-image {
+        background: {
+            color: #fff7f4;
+            position: center center;
+            repeat: no-repeat;
+            size: cover;
+        };
+    }
+}

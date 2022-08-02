@@ -1,0 +1,75 @@
+.single-yoga-courses-box {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .courses-image {
+        border-radius: 5px;
+
+        a {
+            border-radius: 5px;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+    .courses-content {
+        margin-top: 30px;
+
+        h3 {
+            margin-bottom: 12px;
+            font: {
+                size: 24px;
+                weight: 800;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+            padding: {
+                left: 30px;
+                right: 30px;
+            };
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-yoga-courses-box {
+        .courses-content {
+            h3 {
+                margin-bottom: 10px;
+                font-size: 19px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .single-yoga-courses-box {
+        .courses-content {
+            h3 {
+                font-size: 19px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-yoga-courses-box {
+        .courses-content {
+            h3 {
+                font-size: 22px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

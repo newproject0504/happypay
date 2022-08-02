@@ -1,0 +1,95 @@
+.single-language-courses-box {
+    margin-bottom: 30px;
+    text-align: center;
+
+    img {
+        margin-bottom: 30px;
+    }
+    h3 {
+        margin-bottom: 12px;
+        font: {
+            size: 25px;
+            weight: 800;
+        };
+    }
+    p {
+        padding: {
+            left: 20px;
+            right: 20px;
+        };
+    }
+    .default-btn {
+        background-color: transparent;
+        color: var(--mainColor);
+        border: 1px solid var(--mainColor);
+        margin-top: 10px;
+
+        span {
+            background-color: var(--mainColor);
+        }
+    }
+    &:hover {
+        .default-btn {
+            color: var(--whiteColor);
+
+            span {
+                width: 225%;
+                height: 562.5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .single-language-courses-box {
+        h3 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        p {
+            padding: {
+                left: 0;
+                right: 0;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .single-language-courses-box {
+        h3 {
+            margin-bottom: 10px;
+            font-size: 19px;
+        }
+        p {
+            padding: {
+                left: 0;
+                right: 0;
+            };
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-language-courses-box {
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

@@ -1,0 +1,31 @@
+@import "../../common/video/video.component.scss";
+@import "../../common/testimonials/testimonials.component.scss";
+
+.success-story-area {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 40%;
+        background-color: #f8f9f8;
+        z-index: -2;
+    }
+    .shape4 {
+        right: 21%;
+        bottom: 85%;
+    }
+    .shape3 {
+        right: 23%;
+        bottom: 55%;
+    }
+    .shape2 {
+        left: auto;
+        bottom: 3%;
+        right: 25%;
+    }
+}

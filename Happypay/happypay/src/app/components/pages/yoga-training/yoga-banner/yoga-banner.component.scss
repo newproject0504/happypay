@@ -1,0 +1,180 @@
+.yoga-main-banner {
+    position: relative;
+    z-index: 1;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+    padding: {
+        top: 100px;
+        bottom: 100px;
+        left: 40px;
+    };
+    .banner-shape2 {
+        left: auto;
+        top: 12%;
+        right: 0;
+    }
+    .banner-shape3 {
+        left: 52%;
+        top: 30%;
+        right: auto;
+    }
+}
+.yoga-banner-content {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    max-width: 900px;
+
+    .content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 140px;
+
+        .top-image {
+            margin-bottom: 20px;
+        }
+        h1 {
+            margin-bottom: 15px;
+            color: var(--whiteColor);
+            font: {
+                size: 55px;
+                weight: 800;
+            };
+        }
+        p {
+            color: #ececec;
+        }
+        .default-btn {
+            margin-top: 15px;
+        }
+        .bottom-image {
+            margin-top: 15px;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        border-radius: 5px;
+        bottom: 0;
+        z-index: -1;
+        background-color: var(--secondaryColor);
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .yoga-main-banner {
+        padding: {
+            top: 60px;
+            left: 0;
+            bottom: 60px;
+        };
+    }
+    .yoga-banner-content {
+        max-width: 100%;
+
+        .main-image {
+            display: none;
+        }
+        &::before {
+            display: block;
+        }
+        .content {
+            padding: 30px 20px;
+            position: relative;
+            top: 0;
+            transform: unset;
+
+            .top-image {
+                display: none;
+            }
+            h1 {
+                margin-bottom: 15px;
+                line-height: 1.3;
+                font-size: 28px;
+            }
+            .default-btn {
+                margin-top: 5px;
+            }
+            .bottom-image {
+                display: none;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+    .yoga-main-banner {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .yoga-main-banner {
+        padding-left: 0;
+
+        .container-fluid {
+            max-width: 720px;
+        }
+    }
+    .yoga-banner-content {
+        max-width: 720px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+        .content {
+            padding: 100px;
+            margin-top: -10px;
+
+            .bottom-image {
+                display: none;
+            }
+            h1 {
+                font-size: 35px;
+            }
+            .default-btn {
+                margin-top: 10px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .yoga-main-banner {
+        padding-left: 0;
+
+        .container-fluid {
+            max-width: 960px;
+        }
+        .banner-shape2, .banner-shape3 {
+            display: none;
+        }
+    }
+    .yoga-banner-content {
+        max-width: 900px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

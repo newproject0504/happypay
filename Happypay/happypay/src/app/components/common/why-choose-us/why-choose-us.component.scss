@@ -1,0 +1,246 @@
+.why-choose-us-area {
+    .container-fluid {
+        padding: {
+            left: 40px;
+            right: 40px;
+        };
+    }
+}
+.why-choose-us-image {
+    text-align: center;
+}
+.why-choose-us-content {
+    max-width: 595px;
+
+    .sub-title {
+        display: block;
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin: {
+            bottom: 15px;
+        };
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .features-list {
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin: {
+            bottom: 0;
+            top: -5px;
+            left: -8px;
+            right: -8px;
+        };
+        li {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: {
+                left: 8px;
+                right: 8px;
+                top: 16px;
+            };
+            span {
+                display: block;
+                position: relative;
+                color: var(--blackColor);
+                font: {
+                    size: 18px;
+                    weight: 700;
+                };
+                padding: {
+                    left: 50px;
+                    top: 5px;
+                    bottom: 5px;
+                };
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: -2px;
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    text-align: center;
+                    font-weight: 500;
+                    line-height: 40px;
+                    color: var(--mainColor);
+                    font-size: 25px;
+                    background: {
+                        image: url(../../../../assets/img/circle-border.png);
+                        position: center center;
+                        size: cover;
+                        repeat: no-repeat;
+                    };
+                }
+            }
+        }
+    }
+    .default-btn {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .why-choose-us-area {
+        .container-fluid {
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .why-choose-us-image {
+        margin-bottom: 30px;
+    }
+    .why-choose-us-content {
+        padding-left: 0;
+        text-align: center;
+
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .features-list {
+            margin-top: -10px;
+
+            li {
+                span {
+                    font-size: 16px;
+                    padding: {
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                    };
+                    i {
+                        position: relative;
+                        left: 0;
+                        top: 0;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 20px;
+                        display: block;
+                        margin: 0 auto 5px;
+                    }
+                }
+            }
+        }
+        .default-btn {
+            margin-top: 25px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    
+    .why-choose-us-area {
+        .container-fluid {
+            max-width: 540px;
+        }
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .why-choose-us-area {
+        .container-fluid {
+            max-width: 720px;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .why-choose-us-image {
+        margin-bottom: 30px;
+    }
+    .why-choose-us-content {
+        text-align: center;
+        max-width: 100%;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .features-list {
+            li {
+                flex: 0 0 25%;
+                max-width: 25%;
+
+                span {
+                    font-size: 16px;
+                    padding: {
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                    };
+                    i {
+                        position: relative;
+                        top: 0;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        font-size: 20px;
+                        display: block;
+                        margin: {
+                            left: auto;
+                            right: auto;
+                            bottom: 10px;
+                        };
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    .why-choose-us-area {
+        .container-fluid {
+            max-width: 960px;
+            padding: {
+                left: 15px;
+                right: 15px;
+            };
+        }
+    }
+    .why-choose-us-content {
+        max-width: 100%;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}
+@media only screen and (min-width: 1550px) {
+    
+    .why-choose-us-area {
+        .container-fluid {
+            padding: {
+                left: 100px;
+                right: 100px;
+            };
+        }
+    }
+    
+}

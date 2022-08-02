@@ -1,0 +1,117 @@
+.online-platform-area {
+    background-color: #f1f1f1;
+    position: relative;
+    z-index: 1;
+
+    .shape23 {
+        right: 20%;
+        bottom: 15%;
+    }
+}
+.online-platform-image {
+    text-align: center;
+    padding-right: 15px;
+}
+.online-platform-content {
+    padding-left: 15px;
+
+    .sub-title {
+        text-transform: uppercase;
+        color: var(--mainColor);
+        margin-bottom: 10px;
+        display: block;
+        font: {
+            size: 14px;
+            weight: 600;
+        };
+    }
+    h2 {
+        margin-bottom: 15px;
+        font: {
+            size: 36px;
+            weight: 800;
+        };
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .online-platform-area {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+    .online-platform-content {
+        text-align: center;
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 12.5px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+    .online-platform-image {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .online-platform-area {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+    .online-platform-content {
+        text-align: center;
+        padding-left: 0;
+
+        .sub-title {
+            font-size: 13.5px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .online-platform-image {
+        padding-right: 0;
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .online-platform-content {
+        padding-left: 0;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

@@ -1,0 +1,119 @@
+.banner-wrapper {
+    height: 1000px;
+    position: relative;
+    z-index: 1;
+    background: {
+        size: cover;
+        repeat: no-repeat;
+        position: top center;
+        color: var(--blackColor);
+    };
+    &::before {
+        height: 512px;
+        width: 100%;
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background: {
+            size: cover;
+            repeat: no-repeat;
+            position: center center;
+            image: url(../../../../../assets/img/banner-shape11.png);
+        };
+    }
+}
+.banner-wrapper-text {
+    position: relative;
+    z-index: 2;
+    max-width: 590px;
+    margin: {
+        left: auto;
+        top: -200px;
+    };
+    h1 {
+        margin-bottom: 22px;
+        color: var(--whiteColor);
+        font: {
+            size: 48px;
+            weight: 800;
+        };
+    }
+    p {
+        color: var(--whiteColor);
+        max-width: 500px;
+        font: {
+            size: 16.5px;
+        };
+    }
+    .default-btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .banner-wrapper {
+        height: auto;
+        padding: {
+            top: 120px;
+            bottom: 100px;
+        };
+        &::before {
+            display: none;
+        }
+    }
+    .banner-wrapper-text {
+        max-width: 100%;
+        text-align: center;
+        margin: {
+            top: 0;
+            left: 0;
+        };
+        p {
+            max-width: 100%;
+            font: {
+                weight: 500;
+                size: 15px;
+            };
+        }
+        h1 {
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        .default-btn {
+            margin-top: 5px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .banner-wrapper {
+        height: 920px;
+    }
+    .banner-wrapper-text {
+        margin-top: -150px;
+        max-width: 510px;
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 38px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

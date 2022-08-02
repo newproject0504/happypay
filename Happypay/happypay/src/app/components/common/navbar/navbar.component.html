@@ -1,0 +1,177 @@
+<div class="navbar-area headertop" ngStickyNav stickyClass="sticky-box-shadow" ngStickyNav>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/"><img src="assets/images/happypaylogo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- <form class="search-box">
+                    <input type="text" (focus)="focus()" (blur)="blur()" class="input-search" placeholder="Search for anything">
+                    <div id="drop" style="position: absolute; z-index: 100; background-color: white; display: none;">
+                        <ul class="">
+                            <li class="nav-item" *ngFor="let item of courses"><a
+                                class="nav-link" (click)="check('/single-courses-1/'+item.id)" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <button type="submit"><i class="flaticon-search"></i></button>
+                </form> -->
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item"><a routerLink="/" class="nav-link">Home</a></li> -->
+                    <li class="nav-item"><a routerLink="/" class="nav-link"> Home </a></li>
+                    <li class="nav-item"><a routerLink="/aboutus" class="nav-link">About Us </a></li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Partner With Us<i
+                                class='bx bx-chevron-down'></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/customer" class="nav-link">Customer</a></li>
+
+                            <li class="nav-item"><a routerLink="/retailer" class="nav-link">Retailer</a></li>
+
+                            <li class="nav-item"><a routerLink="/distributor" class="nav-link">Distributor</a></li>
+
+                            <li class="nav-item"><a routerLink="/masterdistributor" class="nav-link">Master
+                                    Distributor</a></li>
+
+                            <li class="nav-item"><a routerLink="/franchise" class="nav-link">Franchise </a></li>
+
+                            <li class="nav-item"><a routerLink="/superfranchise" class="nav-link">Super Franchise</a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Services<i
+                                class='bx bx-chevron-down'></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/Aeps" class="nav-link">AEPS</a></li>
+                            <li class="nav-item"><a routerLink="/Emi" class="nav-link">EMI &amp; Cash Collection</a>
+                            </li>
+                            <li class="nav-item"><a routerLink="/Monettrasfer" class="nav-link">Money Transfer</a></li>
+                            <li class="nav-item"><a routerLink="/Paymentsolution" class="nav-link">Payment Solutions</a>
+                            </li>
+                            <li class="nav-item"><a routerLink="/Prepaidcards" class="nav-link">Pre-Paid cards</a></li>
+                            <li class="nav-item"><a routerLink="/Superinsurance" class="nav-link">Super Insurance
+                                    Khata</a></li>
+                            <li class="nav-item"><a routerLink="/Matm" class="nav-link">M-ATM</a></li>
+                            <li class="nav-item"><a routerLink="/Utility" class="nav-link">Utility Services</a></li>
+                            <!-- <li class="nav-item"><a routerLink="/Insurance" class="nav-link">Insurance</a></li> -->
+                            <li class="nav-item"><a routerLink="/Bankaccount" class="nav-link">Bank Account</a></li>
+                            <!-- <li class="nav-item"><a routerLink="/Amazoneasystore" class="nav-link"> Amazon Easy Store</a></li> 
+                         -->
+                            <li class="nav-item"><a routerLink="/whitelabel" class="nav-link">White Label</a></li>
+
+
+                            <li class="nav-item"><a routerLink="/apipartner" class="nav-link">API Partner</a></li>
+
+
+
+                        </ul>
+                    </li>
+
+                    <!-- 
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Services<i class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >BILL PAYMENTS & RECHARGES </a></li>
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >BANKING SERVICES</a></li>
+
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >PAYMENT SERVICES</a></li>
+
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >TRAVEL & E-GOVERNANCE SERVICES</a></li>
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >EMI & CASH COLLECTION</a></li>
+
+                            <li class="nav-item"><a routerLink="/faq" class="nav-link" >KHATA MANAGEMENT</a></li>
+
+                        </ul>
+                    </li><li class="nav-item"><a routerLink="/success-story" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Placements</a></li> -->
+                    <!-- <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Blog</a></li> -->
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Shop</a></li>
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">Contact Us</a></li>
+
+                </ul>
+                <ul class="navbar-nav for-responsive">
+
+                    <li class="nav-item"><a routerLink="/about-1" class="nav-link">About Us </a></li>
+
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Partner With Us<i
+                                class='bx bx-chevron-down'></i></a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/retailer" class="nav-link">Customer</a></li>
+
+                            <li class="nav-item"><a routerLink="/retailer" class="nav-link">Retailer</a></li>
+
+                            <li class="nav-item"><a routerLink="/distributor" class="nav-link">Distributor</a></li>
+
+                            <li class="nav-item"><a routerLink="/masterdistributor" class="nav-link">Master
+                                    Distributor</a></li>
+
+                            <li class="nav-item"><a routerLink="/franchise" class="nav-link">Franchise </a></li>
+
+                            <li class="nav-item"><a routerLink="/superfranchise" class="nav-link">Super Franchise</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link">Services<i
+                                class='bx bx-chevron-down'></i></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/Aeps" class="nav-link">AEPS</a></li>
+                            <li class="nav-item"><a routerLink="/Emi" class="nav-link">EMI &amp; Cash Collection</a>
+                            </li>
+                            <li class="nav-item"><a routerLink="/Monettrasfer" class="nav-link">Money Transfer</a></li>
+                            <li class="nav-item"><a routerLink="/Paymentsolution" class="nav-link">Payment Solutions</a>
+                            </li>
+                            <li class="nav-item"><a routerLink="/Prepaidcards" class="nav-link">Pre-Paid cards</a></li>
+                            <li class="nav-item"><a routerLink="/Superinsurance" class="nav-link">Super Insurance
+                                    Khata</a></li>
+                            <li class="nav-item"><a routerLink="/Matm" class="nav-link">M-ATM</a></li>
+                            <li class="nav-item"><a routerLink="/Utility" class="nav-link">Utility Services</a></li>
+                            <!-- <li class="nav-item"><a routerLink="/Insurance" class="nav-link">Insurance</a></li> -->
+                            <li class="nav-item"><a routerLink="/Bankaccount" class="nav-link">Bank Account</a></li>
+                            <!-- <li class="nav-item"><a routerLink="/Amazoneasystore" class="nav-link"> Amazon Easy Store</a></li> 
+                         -->
+                            <li class="nav-item"><a routerLink="/whitelabel" class="nav-link">White Label</a></li>
+
+
+                            <li class="nav-item"><a routerLink="/apipartner" class="nav-link">API Partner</a></li>
+
+
+
+
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a routerLink="/success-story" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Placements</a></li> -->
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">BLOG</a></li>
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">SHOP</a></li>
+                    <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"
+                            [routerLinkActiveOptions]="{exact: true}">CONTACT US</a></li>
+
+                </ul>
+            </div>
+            <div class="others-option d-flex align-items-center">
+                <!-- <div class="option-item">
+                    <div class="cart-btn">
+                        <a routerLink="/cart"><i class='flaticon-shopping-cart'></i><span>3</span></a>
+                    </div>
+                </div> -->
+                <div class="option-item">
+                    <a *ngIf="!user" (click)="login()" class="default-btmn"><i class="flaticon-user"></i>Sign
+                        Up<span></span></a>
+                    <a *ngIf="user" routerLink="/profile-authentication" class="default-btn"><i
+                            class="flaticon-user"></i>{{user.username}}<span></span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

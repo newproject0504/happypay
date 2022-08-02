@@ -1,0 +1,200 @@
+<div class="page-title-area">
+    <div class="container">
+        <div class="page-title-content">
+            <h2>Welcome User</h2>
+        </div>
+    </div>
+    <div class="shape9"><img src="assets/img/shape8.svg" alt="image"></div>
+</div>
+
+<div class="profile-authentication-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Widthdrawal Process</h2>
+                    <form>
+                        <div class="wallet"><p>Wallet</p>  <h3>{{wallet}}</h3></div>
+                        <div class="earning"><p>Total Earning</p>  <h3>{{totalEarning}}</h3></div>
+                        <div class="form-group" >
+                            <label>Amount</label>
+                            <input type="text" id="wamount" class="form-control" placeholder="Amount should be greater then 100 rupees">
+                        </div>
+                        <button (click)="widthdrawal()">Widthdrawal Amount</button>
+                        <div class="form-group">
+                            <pre style="font-size: medium; font: 400 14px/20px Roboto, 'Helvetica Neue', sans-serif;">{{walletContent}}</pre>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Bank Details</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Account Number</label>
+                            <input type="text" id="bank-account" [value]="user?.bankDetails?.id" class="form-control" placeholder="number">
+                        </div>
+                        <div class="form-group">
+                            <label>Bank Name</label>
+                            <input type="text" id="bank-name" [value]="user?.bankDetails?.bankName" class="form-control" placeholder="name">
+                        </div>
+                        <div class="form-group">
+                            <label>Account Holder Name</label>
+                            <input type="text" id="bank-holder" [value]="user?.bankDetails?.userName" class="form-control" placeholder="user">
+                        </div>
+                        <div class="form-group">
+                            <label>IFSC code</label>
+                            <input type="text" id="bank-code" [value]="user?.bankDetails?.ifcsCode" class="form-control" placeholder="ifsc">
+                        </div>
+                        <button (click)="updateBankDetails()">Update Bank Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="order-table table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Fee</th>
+                        <th scope="col">Payable Amount</th>
+                        <th scope="col">Transaction Id</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+        <div class="order-table table-responsive" style="margin-top: 30px;">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Task Name</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id="table2">
+                </tbody>
+            </table>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Edit profile</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>User Name</label>
+                            <input type="text" [value]="user?.username" id="username" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" [value]="user?.email" id="email" class="form-control" placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" [value]="user?.address!=='null'?user?.address:''" id="address" class="form-control" placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="number" [value]="user?.pincode!=='null'?user.pincode:''" id="pincode" class="form-control" placeholder="Pincode">
+                        </div>
+                        <input type="radio" id="male" name="gender" value="male" [checked]="user.gender==='male'">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female" [checked]="user.gender==='female'">
+                        <label for="female">Female</label><br>
+                        <button (click)="updatePersonalInfo()">Update</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="register-form">
+                    <h2>Change Password</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Old Password</label>
+                            <input id="opass" type="number"  class="form-control" placeholder="old password">
+                        </div>
+                        <div class="form-group">
+                            <label>New Password</label>
+                            <input id="npass" type="number" class="form-control" placeholder="new password">
+                        </div>
+                        <div class="form-group">
+                            <label>Re-enter New Password</label>
+                            <input id="nrpass" type="number" class="form-control" placeholder="re enter password">
+                        </div>
+                        <p class="description">The password should be at 6 digits long</p>
+                        <button (click)="updatepassword()">Update Password</button>
+                        <button (click)="logout()">Log out</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="profile-authentication-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="login-form">
+                    <h2>Edit KYC</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>Pan Number</label>
+                            <input type="text" id="pan" [value]="user?.panCardNumber!=='null'?user.panCardNumber:''" class="form-control" placeholder="pan">
+                        </div>
+                        <div class="form-group">
+                            <label>Aadhaar Number</label>
+                            <input type="text" id="aadhaar" [value]="user?.AadhaarCardNumber!=='null'?user.AadhaarCardNumber:''" class="form-control" placeholder="aadhaar">
+                        </div>
+                        <div class="form-group">
+                            <label>Aadhaar Upload</label>
+                            <input type="file" (change)="uploadAadhaar($event)"  accept=".png,.jpg">
+                            <img style="width: 200px; object-fit: cover; margin: 10px;" [src]="aadhaarLink" alt="loading..." srcset="">
+                        </div>
+                        <div class="form-group">
+                            <label>Pan Upload</label>
+                            <input type="file" (change)="uploadPan($event)" accept=".png,.jpg">
+                            <img style="width: 200px; object-fit: cover; margin: 10px;" [src]="panLink" alt="loading..." srcset="">
+                        </div>
+                        <button (click)="updateKYC()">Update KYC</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="register-form">
+                    <h2>College Details</h2>
+                    <form>
+                        <div class="form-group">
+                            <label>College Name</label>
+                            <input type="text" id="college" [value]="user.college!=='null'?user.college:''"  class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Branch</label>
+                            <input type="text" id="branch" [value]="user.branch!=='null'?user.branch:''" class="form-control" placeholder="passout">
+                        </div>
+                        <div class="form-group">
+                            <label>Batch Passout</label>
+                            <input type="text" id="passout" [value]="user.passout!=='null'?user.passout:''" class="form-control" placeholder="passout">
+                        </div>
+                        <div class="form-group">
+                            <label>Roll Number</label>
+                            <input type="text" id="rollNo" [value]="user.rollNo!=='null'?user.rollNo:''" class="form-control" placeholder="number">
+                        </div>
+                        <div class="form-group">
+                            <label>College Id Upload</label>
+                            <input type="file" accept=".png,.jpg" (change)="uploadCollegeId($event)">
+                            <img style="width: 200px; object-fit: cover; margin: 10px;" [src]="collegeId" alt="loading..." srcset="">
+                        </div>
+                        <button (click)="updateCollege()">Update College Details</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

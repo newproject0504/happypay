@@ -1,0 +1,25 @@
+<div class="start-with-success-area pt-100 bg-f8f9f8 pb-70">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Education For Everyone</span>
+            <h2>Our Success Story</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6" *ngFor="let item of placementData.students">
+                <div class="start-with-success-box">
+                    <div class="image">
+                        <a routerLink="/success-story">
+                            <img [src]="item.imageSrc" alt="image">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a routerLink="/success-story" class="link-btn" style="margin-top: 40px;">{{item.package}} 
+                            <span style="position: absolute; top: -10px; right:-10px; font-size: 10px; color: black;">LPA</span></a>
+                        <h3>{{item.name}}</h3>
+                        <span>{{item.designation}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

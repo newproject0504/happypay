@@ -1,0 +1,232 @@
+@import "../testimonials/testimonials.component.scss";
+.funfacts-and-feedback-area {
+    position: relative;
+    z-index: 1;
+    background: {
+        position: bottom right;
+        repeat: no-repeat;
+        size: cover;
+    };
+    .shape4 {
+        right: 21%;
+        bottom: 41%;
+    }
+    .shape3 {
+        right: 23%;
+        bottom: 22%;
+    }
+    .shape2 {
+        left: auto;
+        bottom: 3%;
+        right: 25%;
+    }
+}
+.funfacts-list {
+    .single-funfacts-box {
+        margin-bottom: 0;
+    }
+    .row {
+        .col-lg-6 {
+            &:nth-child(1) {
+                .single-funfacts-box {
+                    margin: {
+                        top: 60px;
+                        bottom: 30px;
+                    };
+                    &::before {
+                        animation: {
+                            duration: 60s;
+                        };
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .single-funfacts-box {
+                    border-color: var(--mainColor);
+
+                    &::before {
+                        animation: {
+                            duration: 70s;
+                        };
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .single-funfacts-box {
+                    border-color: #ad8360;
+
+                    &::before {
+                        animation: {
+                            duration: 80s;
+                        };
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .single-funfacts-box {
+                    border-color: #221638;
+                    margin: {
+                        top: -60px;
+                    };
+
+                    &::before {
+                        animation: {
+                            duration: 90s;
+                        };
+                    }
+                }
+            }
+        }
+    }
+}
+.single-funfacts-box {
+    margin-bottom: 30px;
+    background-color: #eee8e2;
+    text-align: center;
+    border: 1px dashed #308800;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: {
+        top: 100px;
+        bottom: 100px;
+        left: 40px;
+        right: 40px;
+    };
+    h3 {
+        margin-bottom: 0;
+        color: var(--mainColor);
+        font: {
+            size: 44px;
+            weight: 800;
+        };
+        span {
+            font-size: 48px;
+        }
+        .odometer {
+            position: relative;
+            top: -2px;
+        }
+    }
+    p {
+        text-transform: uppercase;
+        color: var(--blackColor);
+        line-height: 1;
+        margin-top: 10px;
+        font: {
+            weight: 700;
+            size: 15px;
+        };
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 10px;
+        opacity: 0.7;
+        z-index: -1;
+        background: {
+            image: url(../../../../assets/img/funfacts-shape.png);
+            position: center center;
+            size: contain;
+            repeat: no-repeat;
+        };
+        animation: {
+            name: rotateme;
+            duration: 50s;
+            iteration-count: infinite;
+            timing-function: linear;
+        };
+    }
+    &:hover {
+        border-color: var(--mainColor);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .funfacts-list {
+        .single-funfacts-box {
+            margin: {
+                bottom: 0 !important;
+                top: 30px !important;
+            };
+        }
+    }
+    .single-funfacts-box {
+        padding: {
+            top: 40px;
+            bottom: 40px;
+            left: 20px;
+            right: 20px;
+        };
+        h3 {
+            font-size: 30px;
+
+            span {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .funfacts-list {
+        margin-top: 40px;
+    }
+    .single-funfacts-box {
+        padding: {
+            top: 80px;
+            bottom: 80px;
+            left: 25px;
+            right: 25px;
+        };
+        h3 {
+            font-size: 36px;
+
+            span {
+                font-size: 40px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .single-funfacts-box {
+        padding: {
+            top: 75px;
+            bottom: 75px;
+            left: 20px;
+            right: 20px;
+        };
+        h3 {
+            font-size: 35px;
+
+            span {
+                font-size: 40px;
+            }
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}

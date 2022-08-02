@@ -1,0 +1,249 @@
+.overview-area {
+    position: relative;
+    z-index: 1;
+
+    .shape3 {
+        right: auto;
+        bottom: 35%;
+        left: 3%;
+    }
+    .shape4 {
+        right: auto;
+        bottom: 52%;
+        left: 10%;
+    }
+    .shape2 {
+        left: auto;
+        bottom: 39%;
+        right: 5%;
+    }
+    .shape9 {
+        left: 40%;
+        top: 60px;
+    }
+}
+.overview-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: {
+        right: calc(var(--bs-gutter-x) / -2);
+        left: calc(var(--bs-gutter-x) / -2);
+        top: 80px;
+    };
+    .overview-content, .overview-image {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: {
+            right: calc(var(--bs-gutter-x) / 2);
+            left: calc(var(--bs-gutter-x) / 2);
+        };
+    }
+    .overview-content {
+        .sub-title {
+            display: block;
+            text-transform: uppercase;
+            color: var(--mainColor);
+            margin-bottom: 10px;
+            font: {
+                size: 14px;
+                weight: 600;
+            };
+        }
+        h2 {
+            margin-bottom: 15px;
+            font: {
+                size: 36px;
+                weight: 800;
+            };
+        }
+        .default-btn {
+            margin-top: 10px;
+        }
+        .btn-box {
+            margin-top: 25px;
+
+            .playstore-btn {
+                display: inline-block;
+                background-color: var(--blackColor);
+                color: var(--whiteColor) !important;
+                position: relative;
+                border-radius: 5px;
+                font: {
+                    size: 14px;
+                    weight: 500;
+                };
+                padding: {
+                    right: 20px;
+                    top: 7px;
+                    bottom: 5px;
+                    left: 60px;
+                };
+                img {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                span {
+                    display: block;
+                    margin-top: -2px;
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    };
+                }
+            }
+            .applestore-btn {
+                display: inline-block;
+                background-color: var(--blackColor);
+                color: var(--whiteColor);
+                position: relative;
+                margin-left: 15px;
+                border-radius: 5px;
+                font: {
+                    size: 14px;
+                    weight: 500;
+                };
+                padding: {
+                    right: 20px;
+                    top: 7px;
+                    bottom: 5px;
+                    left: 65px;
+                };
+                img {
+                    position: absolute;
+                    left: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                span {
+                    display: block;
+                    margin-top: -2px;
+                    font: {
+                        size: 18px;
+                        weight: 700;
+                    };
+                }
+            }
+        }
+    }
+    .overview-image {
+        text-align: center;
+    }
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .overview-box {
+        margin-top: 45px;
+
+        .overview-content, .overview-image {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .overview-content {
+            order: 2;
+            text-align: center;
+
+            .sub-title {
+                font-size: 12.5px;
+            }
+            h2 {
+                font-size: 25px;
+            }
+            .btn-box {
+                .playstore-btn {
+                    font-size: 10px;
+                    text-align: start;
+                    padding: {
+                        bottom: 5px;
+                        left: 45px;
+                        right: 10px;
+                        top: 7px;
+                    };
+                    img {
+                        left: 10px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+                .applestore-btn {
+                    font-size: 10px;
+                    text-align: start;
+                    margin-left: 8px;
+                    padding: {
+                        bottom: 5px;
+                        left: 55px;
+                        right: 10px;
+                        top: 7px;
+                    };
+                    img {
+                        left: 10px;
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .overview-image {
+            order: 1;
+            margin-bottom: 35px;
+        }
+    }
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .overview-box {
+        margin-top: 45px;
+
+        .overview-content, .overview-image {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .overview-content {
+            order: 2;
+            text-align: center;
+
+            .sub-title {
+                font-size: 13.5px;
+            }
+            h2 {
+                font-size: 30px;
+            }
+            .btn-box {
+                .playstore-btn, .applestore-btn {
+                    text-align: start;
+                }
+            }
+        }
+        .overview-image {
+            order: 1;
+            margin-bottom: 40px;
+        }
+    }
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .overview-box {
+        .overview-content {
+            h2 {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1355px) {
+
+}
